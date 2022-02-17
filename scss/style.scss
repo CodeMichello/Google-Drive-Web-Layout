@@ -1,0 +1,58 @@
+@use "abstracts/variables";
+@use "abstracts/globals";
+
+nav {
+  position: sticky;
+  background-color: aqua;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+
+  .navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 33px;
+      width: 33px;
+    }
+
+    svg {
+      margin-left: 12px;
+    }
+
+    p {
+      margin-left: 5px;
+      font-size: 22px;
+      color: #5f6368;
+      font-family: variables.$navlinks-font;
+    }
+  }
+
+  .navbar-links {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+      }
+
+      li {
+        list-style-type: none;
+        color: variables.$navlinks-dark;
+        font-size: variables.$navlinks-font-size;
+        padding-left: 25px;
+        font-family: variables.$navlinks-font;
+      }
+    }
+  }
+}
