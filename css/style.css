@@ -1,4 +1,5 @@
 @import url("http://fonts.cdnfonts.com/css/product-sans");
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:wght@100;200;300;400;500;700;900&display=swap");
 /* Box sizing rules */
 *,
 *::before,
@@ -75,7 +76,7 @@ select {
 }
 nav {
   position: sticky;
-  background-color: aqua;
+  padding: 0 12px;
 }
 
 .navbar-container {
@@ -86,13 +87,15 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 8px;
 }
 .navbar-container .navbar-brand img {
   height: 33px;
   width: 33px;
 }
 .navbar-container .navbar-brand svg {
-  margin-left: 12px;
+  margin-left: 11px;
+  margin-top: 2px;
 }
 .navbar-container .navbar-brand p {
   margin-left: 5px;
@@ -115,10 +118,50 @@ nav {
 }
 .navbar-container .navbar-links ul li {
   list-style-type: none;
-  color: #202124;
+  color: #5f6368;
+  font-size: 14px;
+  letter-spacing: 0.25px;
+  padding: 15px 15px;
+  font-family: "Google Sans", sans-serif;
+  font-weight: 500;
+}
+.navbar-container .navbar-links ul li:hover {
+  background-color: #f8f9fa;
+  padding: 15px 15px;
+  border-radius: 4px;
+}
+.navbar-container .navbar-links .navbar-buttons button {
+  font-family: "Google Sans", sans-serif;
+  font-weight: 500;
   font-size: 17px;
-  padding-left: 25px;
-  font-family: "Product Sans", sans-serif;
+  padding: 10px 24px;
+  margin: 8px 0px 8px 0px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid #d1d0d0;
+  cursor: pointer;
+}
+.navbar-container .navbar-links .navbar-buttons button:focus {
+  border: 2px solid #1a73e8;
+}
+.navbar-container .navbar-links .navbar-buttons .btn-outline-blue {
+  color: #1a73e8;
+  background: #fff;
+}
+.navbar-container .navbar-links .navbar-buttons .btn-outline-blue:hover {
+  background: #a5ccff21;
+  border: 1px solid #1a73e8;
+}
+.navbar-container .navbar-links .navbar-buttons .btn-blue {
+  color: #fff;
+  background: #1a73e8;
+  border: none;
+  margin-left: 5px;
+  transition: background 0.3s ease;
+}
+.navbar-container .navbar-links .navbar-buttons .btn-blue:hover {
+  background: #145ec0;
 }
 
 /*# sourceMappingURL=style.css.map */
