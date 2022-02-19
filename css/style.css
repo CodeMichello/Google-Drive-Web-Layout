@@ -77,11 +77,13 @@ select {
 nav {
   position: sticky;
   padding: 0 12px;
+  box-shadow: -6px 1px 2px 0 rgba(54, 64, 67, 0.3), -6px 1px 3px 1px rgba(54, 64, 67, 0.15);
 }
 
 .navbar-container {
   display: flex;
   align-items: center;
+  max-height: 64px;
 }
 .navbar-container .navbar-brand {
   display: flex;
@@ -95,7 +97,7 @@ nav {
 }
 .navbar-container .navbar-brand svg {
   margin-left: 11px;
-  margin-top: 2px;
+  margin-bottom: -5px;
 }
 .navbar-container .navbar-brand p {
   margin-left: 5px;
