@@ -74,9 +74,48 @@ select {
     scroll-behavior: auto !important;
   }
 }
+.navbar-buttons button {
+  font-family: "Google Sans", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 10px 24px;
+  margin: 8px 0px 8px 0px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid #d1d0d0;
+  cursor: pointer;
+}
+.navbar-buttons button:focus {
+  border: 2px solid #1a73e8;
+}
+.navbar-buttons .btn-outline-blue {
+  color: #1a73e8;
+  background: #fff;
+}
+.navbar-buttons .btn-outline-blue:hover {
+  background: #a5ccff21;
+  border: 1px solid #1a73e8;
+}
+.navbar-buttons .btn-blue {
+  color: #fff;
+  background: #1a73e8;
+  border: none;
+  margin-left: 5px;
+  transition: background 0.3s ease;
+}
+.navbar-buttons .btn-blue:hover {
+  background: #145ec0;
+}
+
 nav {
   position: sticky;
   padding: 0 12px;
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+}
+nav.scrolled {
   box-shadow: -6px 1px 2px 0 rgba(54, 64, 67, 0.3), -6px 1px 3px 1px rgba(54, 64, 67, 0.15);
 }
 
@@ -90,6 +129,10 @@ nav {
   justify-content: center;
   align-items: center;
   margin-left: 8px;
+  cursor: pointer;
+}
+.navbar-container .navbar-brand:hover path {
+  fill: #000;
 }
 .navbar-container .navbar-brand img {
   height: 33px;
@@ -132,38 +175,9 @@ nav {
   padding: 15px 15px;
   border-radius: 4px;
 }
-.navbar-container .navbar-links .navbar-buttons button {
-  font-family: "Google Sans", sans-serif;
-  font-weight: 500;
-  font-size: 17px;
-  padding: 10px 24px;
-  margin: 8px 0px 8px 0px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  border: 1px solid #d1d0d0;
-  cursor: pointer;
-}
-.navbar-container .navbar-links .navbar-buttons button:focus {
-  border: 2px solid #1a73e8;
-}
-.navbar-container .navbar-links .navbar-buttons .btn-outline-blue {
-  color: #1a73e8;
-  background: #fff;
-}
-.navbar-container .navbar-links .navbar-buttons .btn-outline-blue:hover {
-  background: #a5ccff21;
-  border: 1px solid #1a73e8;
-}
-.navbar-container .navbar-links .navbar-buttons .btn-blue {
-  color: #fff;
-  background: #1a73e8;
-  border: none;
-  margin-left: 5px;
-  transition: background 0.3s ease;
-}
-.navbar-container .navbar-links .navbar-buttons .btn-blue:hover {
-  background: #145ec0;
+
+section {
+  padding-top: 500px;
 }
 
 /*# sourceMappingURL=style.css.map */

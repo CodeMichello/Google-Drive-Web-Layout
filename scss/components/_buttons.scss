@@ -1,0 +1,41 @@
+@use "../abstracts/variables";
+
+.navbar-buttons {
+  button {
+    font-family: variables.$navlinks-font-2;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 10px 24px;
+    margin: 8px 0px 8px 0px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 1px solid #d1d0d0;
+    cursor: pointer;
+
+    &:focus {
+      border: 2px solid variables.$button-blue;
+    }
+  }
+  .btn-outline-blue {
+    color: variables.$button-blue;
+    background: #fff;
+
+    &:hover {
+      background: #a5ccff21;
+      border: 1px solid variables.$button-blue;
+    }
+  }
+
+  .btn-blue {
+    color: #fff;
+    background: variables.$button-blue;
+    border: none;
+    margin-left: 5px;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: #145ec0;
+    }
+  }
+}
