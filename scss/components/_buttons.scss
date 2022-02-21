@@ -1,6 +1,7 @@
 @use "../abstracts/variables";
 
-.navbar-buttons {
+.navbar-buttons,
+.hero-text-cta {
   button {
     font-family: variables.$navlinks-font-2;
     font-weight: 500;
